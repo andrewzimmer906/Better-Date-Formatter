@@ -10,6 +10,7 @@ This repo includes a simple class that has all the formats for an NSDateFormatte
 * Don't look up NSDateFormatter's accepted formats ever again.
 
 **Example usage**  
+
     NSDate *date = [NSDate date];
     NSString *dateString = [NSDateFormatter stringFromDate:date withFormat:
 	                           [NSString stringWithFormat:@"%@, %@ %@ %@", DAY_OF_WEEK_FORMAT, MONTH_FORMAT, DAY_OF_MONTH_FORMAT_NUM, YEAR_FORMAT_4]];
