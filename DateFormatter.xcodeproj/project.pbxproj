@@ -1,0 +1,280 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8917C06915757216003CCA9C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8917C06815757216003CCA9C /* UIKit.framework */; };
+		8917C06B15757216003CCA9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8917C06A15757216003CCA9C /* Foundation.framework */; };
+		8917C06D15757216003CCA9C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8917C06C15757216003CCA9C /* CoreGraphics.framework */; };
+		8917C07315757216003CCA9C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8917C07115757216003CCA9C /* InfoPlist.strings */; };
+		8917C07515757216003CCA9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8917C07415757216003CCA9C /* main.m */; };
+		8917C07915757216003CCA9C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8917C07815757216003CCA9C /* AppDelegate.m */; };
+		8917C07C15757216003CCA9C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8917C07A15757216003CCA9C /* MainStoryboard.storyboard */; };
+		8917C07F15757216003CCA9C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8917C07E15757216003CCA9C /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8917C06415757216003CCA9C /* DateFormatter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DateFormatter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8917C06815757216003CCA9C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8917C06A15757216003CCA9C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8917C06C15757216003CCA9C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8917C07015757216003CCA9C /* DateFormatter-Info.plist */ = {isa = PBXFileReference; path = "DateFormatter-Info.plist"; sourceTree = "<group>"; };
+		8917C07215757216003CCA9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8917C07415757216003CCA9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8917C07615757216003CCA9C /* DateFormatter-Prefix.pch */ = {isa = PBXFileReference; path = "DateFormatter-Prefix.pch"; sourceTree = "<group>"; };
+		8917C07715757216003CCA9C /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		8917C07815757216003CCA9C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8917C07B15757216003CCA9C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		8917C07D15757216003CCA9C /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		8917C07E15757216003CCA9C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8917C06115757216003CCA9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8917C06915757216003CCA9C /* UIKit.framework in Frameworks */,
+				8917C06B15757216003CCA9C /* Foundation.framework in Frameworks */,
+				8917C06D15757216003CCA9C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8917C05915757216003CCA9C = {
+			isa = PBXGroup;
+			children = (
+				8917C06E15757216003CCA9C /* DateFormatter */,
+				8917C06715757216003CCA9C /* Frameworks */,
+				8917C06515757216003CCA9C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8917C06515757216003CCA9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8917C06415757216003CCA9C /* DateFormatter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8917C06715757216003CCA9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8917C06815757216003CCA9C /* UIKit.framework */,
+				8917C06A15757216003CCA9C /* Foundation.framework */,
+				8917C06C15757216003CCA9C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8917C06E15757216003CCA9C /* DateFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				8917C07715757216003CCA9C /* AppDelegate.h */,
+				8917C07815757216003CCA9C /* AppDelegate.m */,
+				8917C07A15757216003CCA9C /* MainStoryboard.storyboard */,
+				8917C07D15757216003CCA9C /* ViewController.h */,
+				8917C07E15757216003CCA9C /* ViewController.m */,
+				8917C06F15757216003CCA9C /* Supporting Files */,
+			);
+			path = DateFormatter;
+			sourceTree = "<group>";
+		};
+		8917C06F15757216003CCA9C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8917C07015757216003CCA9C /* DateFormatter-Info.plist */,
+				8917C07115757216003CCA9C /* InfoPlist.strings */,
+				8917C07415757216003CCA9C /* main.m */,
+				8917C07615757216003CCA9C /* DateFormatter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8917C06315757216003CCA9C /* DateFormatter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8917C08215757216003CCA9C /* Build configuration list for PBXNativeTarget "DateFormatter" */;
+			buildPhases = (
+				8917C06015757216003CCA9C /* Sources */,
+				8917C06115757216003CCA9C /* Frameworks */,
+				8917C06215757216003CCA9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DateFormatter;
+			productName = DateFormatter;
+			productReference = 8917C06415757216003CCA9C /* DateFormatter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8917C05B15757216003CCA9C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = Modea;
+			};
+			buildConfigurationList = 8917C05E15757216003CCA9C /* Build configuration list for PBXProject "DateFormatter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8917C05915757216003CCA9C;
+			productRefGroup = 8917C06515757216003CCA9C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8917C06315757216003CCA9C /* DateFormatter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8917C06215757216003CCA9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8917C07315757216003CCA9C /* InfoPlist.strings in Resources */,
+				8917C07C15757216003CCA9C /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8917C06015757216003CCA9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8917C07515757216003CCA9C /* main.m in Sources */,
+				8917C07915757216003CCA9C /* AppDelegate.m in Sources */,
+				8917C07F15757216003CCA9C /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8917C07115757216003CCA9C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8917C07215757216003CCA9C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8917C07A15757216003CCA9C /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8917C07B15757216003CCA9C /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8917C08015757216003CCA9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8917C08115757216003CCA9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8917C08315757216003CCA9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DateFormatter/DateFormatter-Prefix.pch";
+				INFOPLIST_FILE = "DateFormatter/DateFormatter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8917C08415757216003CCA9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DateFormatter/DateFormatter-Prefix.pch";
+				INFOPLIST_FILE = "DateFormatter/DateFormatter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8917C05E15757216003CCA9C /* Build configuration list for PBXProject "DateFormatter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8917C08015757216003CCA9C /* Debug */,
+				8917C08115757216003CCA9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8917C08215757216003CCA9C /* Build configuration list for PBXNativeTarget "DateFormatter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8917C08315757216003CCA9C /* Debug */,
+				8917C08415757216003CCA9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8917C05B15757216003CCA9C /* Project object */;
+}
