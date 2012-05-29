@@ -15,6 +15,7 @@
 		8917C07915757216003CCA9C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8917C07815757216003CCA9C /* AppDelegate.m */; };
 		8917C07C15757216003CCA9C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8917C07A15757216003CCA9C /* MainStoryboard.storyboard */; };
 		8917C07F15757216003CCA9C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8917C07E15757216003CCA9C /* ViewController.m */; };
+		8917C08815757316003CCA9C /* NSDateFormatter+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8917C08715757316003CCA9C /* NSDateFormatter+Additions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +23,17 @@
 		8917C06815757216003CCA9C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8917C06A15757216003CCA9C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8917C06C15757216003CCA9C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		8917C07015757216003CCA9C /* DateFormatter-Info.plist */ = {isa = PBXFileReference; path = "DateFormatter-Info.plist"; sourceTree = "<group>"; };
+		8917C07015757216003CCA9C /* DateFormatter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DateFormatter-Info.plist"; sourceTree = "<group>"; };
 		8917C07215757216003CCA9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8917C07415757216003CCA9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8917C07615757216003CCA9C /* DateFormatter-Prefix.pch */ = {isa = PBXFileReference; path = "DateFormatter-Prefix.pch"; sourceTree = "<group>"; };
-		8917C07715757216003CCA9C /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		8917C07615757216003CCA9C /* DateFormatter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DateFormatter-Prefix.pch"; sourceTree = "<group>"; };
+		8917C07715757216003CCA9C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8917C07815757216003CCA9C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8917C07B15757216003CCA9C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		8917C07D15757216003CCA9C /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		8917C07D15757216003CCA9C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		8917C07E15757216003CCA9C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8917C08615757316003CCA9C /* NSDateFormatter+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+Additions.h"; sourceTree = "<group>"; };
+		8917C08715757316003CCA9C /* NSDateFormatter+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+Additions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,7 @@
 		8917C06E15757216003CCA9C /* DateFormatter */ = {
 			isa = PBXGroup;
 			children = (
+				8917C085157572F0003CCA9C /* NSDateFormatter+Additions */,
 				8917C07715757216003CCA9C /* AppDelegate.h */,
 				8917C07815757216003CCA9C /* AppDelegate.m */,
 				8917C07A15757216003CCA9C /* MainStoryboard.storyboard */,
@@ -96,6 +100,15 @@
 				8917C07615757216003CCA9C /* DateFormatter-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8917C085157572F0003CCA9C /* NSDateFormatter+Additions */ = {
+			isa = PBXGroup;
+			children = (
+				8917C08615757316003CCA9C /* NSDateFormatter+Additions.h */,
+				8917C08715757316003CCA9C /* NSDateFormatter+Additions.m */,
+			);
+			name = "NSDateFormatter+Additions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +177,7 @@
 				8917C07515757216003CCA9C /* main.m in Sources */,
 				8917C07915757216003CCA9C /* AppDelegate.m in Sources */,
 				8917C07F15757216003CCA9C /* ViewController.m in Sources */,
+				8917C08815757316003CCA9C /* NSDateFormatter+Additions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
