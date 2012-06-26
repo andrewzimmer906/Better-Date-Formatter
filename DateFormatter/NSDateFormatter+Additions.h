@@ -50,4 +50,9 @@
 +(NSString*)stringFromDate:(NSDate*)date withFormat:(NSString*)format, ...;
 +(NSDate*)dateFromString:(NSString*)dateString withFormat:(NSString*)format, ...;
 
++(id)newForISO8601;
++(NSString*)stringFromDateForISO8601:(NSDate*)date;
++(NSDate*)dateFromStringForISO8601:(NSString*)dateString;
+
++(NSString*)twitterDateString:(NSDate*)date;
 @end

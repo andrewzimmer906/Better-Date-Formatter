@@ -18,6 +18,7 @@
 @synthesize date2;
 @synthesize date3;
 @synthesize date4;
+@synthesize isoDate;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -35,6 +36,8 @@
     date3.text = [NSDateFormatter stringFromDate:date withFormat:@"%@/%@/%@", DAY_OF_MONTH_FORMAT_NUM, MONTH_FORMAT_NUM, YEAR_FORMAT_2];
 
     date4.text = [NSDateFormatter stringFromDate:date withFormat:@"%@ - %@", TIMEZONE_FORMAT, BC_AD_FORMAT_FULL];
+    
+    isoDate.text = [NSDateFormatter stringFromDateForISO8601:date];
 }
 
 - (void)viewDidUnload
@@ -43,6 +46,7 @@
     [self setDate2:nil];
     [self setDate3:nil];
     [self setDate4:nil];
+    [self setIsoDate:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -52,6 +56,7 @@
     [date2 release];
     [date3 release];
     [date4 release];
+    [isoDate release];
     [super dealloc];
 }
 @end

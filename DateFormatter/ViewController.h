@@ -14,4 +14,5 @@
 @property (retain, nonatomic) IBOutlet UILabel *date2;
 @property (retain, nonatomic) IBOutlet UILabel *date3;
 @property (retain, nonatomic) IBOutlet UILabel *date4;
+@property (retain, nonatomic) IBOutlet UILabel *isoDate;
 @end
