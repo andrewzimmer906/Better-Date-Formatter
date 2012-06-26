@@ -8,11 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    NSDate *startDate_;
+}
 
 @property (retain, nonatomic) IBOutlet UILabel *date1;
 @property (retain, nonatomic) IBOutlet UILabel *date2;
 @property (retain, nonatomic) IBOutlet UILabel *date3;
 @property (retain, nonatomic) IBOutlet UILabel *date4;
 @property (retain, nonatomic) IBOutlet UILabel *isoDate;
+@property (retain, nonatomic) IBOutlet UILabel *twitterFormat;
 @end

@@ -12,6 +12,7 @@
 + (NSInteger)numDaysAgo:(NSDate*)dat;
 + (NSInteger)numHoursAgo:(NSDate*)date;
 + (NSInteger)numMinutesAgo:(NSDate*)date;
++ (NSInteger)numSecondsAgo:(NSDate*)date;
 + (NSInteger)daysBetweenDate:(NSDate*)date toDate:(NSDate*)toDateTime;
 @end
 
@@ -78,46 +79,42 @@
 }
 
 #pragma mark - Twitter Date String
-+ (NSString*)twitterDateString:(NSDate*)date {
++ (NSString*)twitterStringFromDate:(NSDate*)date {
     NSInteger numDaysAgo = [self numDaysAgo:date];
     NSInteger numHoursAgo = [self numHoursAgo:date];
     NSInteger numMinutesAgo = [self numMinutesAgo:date];
+    NSInteger numSecondsAgo = [self numSecondsAgo:date];
     
     NSString *dateString;
     
     if(numDaysAgo <= 0) {
         if(numHoursAgo <= 0) {
             if(numMinutesAgo <= 0) {
-                dateString = @"Now";
-            } else if(numMinutesAgo <= 1) {
-                dateString = @"1 minute ago";
+                if(numSecondsAgo <= 0) {
+                    dateString = @"Now";
+                } else {
+                    dateString = [NSString stringWithFormat:@"%is", numSecondsAgo];
+                }
             } else {
-                dateString = [NSString stringWithFormat:@"%i minutes ago", numMinutesAgo];
+                dateString = [NSString stringWithFormat:@"%im", numMinutesAgo];
             }
         } else {
-            if(numHoursAgo == 1) {
-                dateString = @"1 hour ago";
-            } else {
-                dateString = [NSString stringWithFormat:@"%i hours ago", numHoursAgo];
-            }
+            dateString = [NSString stringWithFormat:@"%ih", numHoursAgo];
         }
     } else if(numDaysAgo == 1) {
         if(numHoursAgo < 24) {
             if(numHoursAgo > 0) {
-                dateString = [NSString stringWithFormat:@"%i hour%@ ago", numHoursAgo, (numHoursAgo > 1) ? @"s" : @""]; 
+                dateString = [NSString stringWithFormat:@"%ih", numHoursAgo]; 
             } else {
-                dateString = [NSString stringWithFormat:@"%i minute%@ ago", numMinutesAgo, (numMinutesAgo > 1) ? @"s" : @""]; 
+                dateString = [NSString stringWithFormat:@"%im", numMinutesAgo]; 
             }
         } else {
-            dateString = @"1 day ago";
+            dateString = @"1d";
         }
     } else if(numDaysAgo < 3) {
-        dateString = [NSString stringWithFormat:@"%i days ago", numDaysAgo];
+        dateString = [NSString stringWithFormat:@"%id", numDaysAgo];
     } else {
-        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-        [dateFormatter setDateFormat:@"MMM d"];
-        dateString = [dateFormatter stringFromDate:date];
-        [dateFormatter release];
+        dateString = [NSDateFormatter stringFromDate:date withFormat:@"%@ %@", DAY_OF_MONTH_FORMAT_NUM, MONTH_FORMAT_ABR];
     }
     
     return dateString;
@@ -138,6 +135,11 @@
 + (NSInteger)numMinutesAgo:(NSDate*)date {
     NSTimeInterval time = [[NSDate date] timeIntervalSinceDate:date];
     return time / 60;
+}
+
++ (NSInteger)numSecondsAgo:(NSDate*)date {
+    NSTimeInterval time = [[NSDate date] timeIntervalSinceDate:date];
+    return time;
 }
 
 + (NSInteger)daysBetweenDate:(NSDate*)date toDate:(NSDate*)toDateTime {

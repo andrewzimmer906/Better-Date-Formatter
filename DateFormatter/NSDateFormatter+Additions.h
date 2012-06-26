@@ -54,5 +54,5 @@
 +(NSString*)stringFromDateForISO8601:(NSDate*)date;
 +(NSDate*)dateFromStringForISO8601:(NSString*)dateString;
 
-+(NSString*)twitterDateString:(NSDate*)date;
++(NSString*)twitterStringFromDate:(NSDate*)date;
 @end

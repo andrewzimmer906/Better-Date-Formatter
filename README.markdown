@@ -16,7 +16,7 @@ This repo includes a simple class that has all the formats for an NSDateFormatte
     NSString *dateString = [NSDateFormatter stringFromDate:date withFormat:@"%@, %@ %@ %@", DAY_OF_WEEK_FORMAT, MONTH_FORMAT, DAY_OF_MONTH_FORMAT_NUM, YEAR_FORMAT_4];
 	NSString *timeString = [NSDateFormatter stringFromDate:date withFormat:@"%@:%@:%@ %@", HOUR_FORMAT, MINUTE_FORMAT, SECOND_FORMAT, AM_PM_FORMAT];
 	NSString *ISO_String = [NSDateFormatter stringFromDateForISO8601:date]; //YYYY-MM-DDTHH:mm:ssz
-	NSString *twitterReadableString = [NSDateFormatter twitterDateString:date];
+	NSString *twitterReadableString = [NSDateFormatter twitterStringFromDate:date]; //ex:'1s' '1m' '1h' '1d' 'Jan 22'
 	
 **Questions or Comments:**   
 Email: andrewzimmer906@gmail.com  

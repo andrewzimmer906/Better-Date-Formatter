@@ -19,9 +19,11 @@
 @synthesize date3;
 @synthesize date4;
 @synthesize isoDate;
+@synthesize twitterFormat;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    startDate_ = [[NSDate date] retain];
     [self updateDate:nil];
     [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(updateDate:) userInfo:nil repeats:YES];
 }
@@ -38,6 +40,8 @@
     date4.text = [NSDateFormatter stringFromDate:date withFormat:@"%@ - %@", TIMEZONE_FORMAT, BC_AD_FORMAT_FULL];
     
     isoDate.text = [NSDateFormatter stringFromDateForISO8601:date];
+    
+    twitterFormat.text = [NSDateFormatter twitterStringFromDate:startDate_];
 }
 
 - (void)viewDidUnload
@@ -47,6 +51,7 @@
     [self setDate3:nil];
     [self setDate4:nil];
     [self setIsoDate:nil];
+    [self setTwitterFormat:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -57,6 +62,8 @@
     [date3 release];
     [date4 release];
     [isoDate release];
+    [twitterFormat release];
+    [startDate_ release]; startDate_ = nil;
     [super dealloc];
 }
 @end
