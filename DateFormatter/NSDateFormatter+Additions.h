@@ -3,7 +3,7 @@
 //  DateFormatter
 //
 //  Created by Andrew Zimmer on 5/29/12.
-//  Copyright (c) 2012 Modea. All rights reserved.
+//  Copyright (c) 2012 Andrew Zimmer. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -46,8 +46,8 @@
 
 @interface NSDateFormatter (Additions)
 
-+(id)newWithFormat:(NSString*)format;
-+(NSString*)stringFromDate:(NSDate*)date withFormat:(NSString*)format;
-+(NSDate*)dateFromString:(NSString*)dateString withFormat:(NSString*)format;
++(id)newWithFormat:(NSString*)format, ...;
++(NSString*)stringFromDate:(NSDate*)date withFormat:(NSString*)format, ...;
++(NSDate*)dateFromString:(NSString*)dateString withFormat:(NSString*)format, ...;
 
 @end

@@ -12,11 +12,9 @@ This repo includes a simple class that has all the formats for an NSDateFormatte
 **Example usage**  
 
     NSDate *date = [NSDate date];
-    NSString *dateString = [NSDateFormatter stringFromDate:date withFormat:
-	                           [NSString stringWithFormat:@"%@, %@ %@ %@", DAY_OF_WEEK_FORMAT, MONTH_FORMAT, DAY_OF_MONTH_FORMAT_NUM, YEAR_FORMAT_4]];
+    NSString *dateString = [NSDateFormatter stringFromDate:date withFormat:@"%@, %@ %@ %@", DAY_OF_WEEK_FORMAT, MONTH_FORMAT, DAY_OF_MONTH_FORMAT_NUM, YEAR_FORMAT_4];
 	
-	NSString *timeString = [NSDateFormatter stringFromDate:date withFormat:
-					           [NSString stringWithFormat:@"%@:%@:%@ %@", HOUR_FORMAT, MINUTE_FORMAT, SECOND_FORMAT, AM_PM_FORMAT]];
+	NSString *timeString = [NSDateFormatter stringFromDate:date withFormat:@"%@:%@:%@ %@", HOUR_FORMAT, MINUTE_FORMAT, SECOND_FORMAT, AM_PM_FORMAT];
 	
 **Questions or Comments:**   
 Email: andrewzimmer906@gmail.com  
